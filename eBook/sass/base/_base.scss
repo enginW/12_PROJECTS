@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;;
+}
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none;
+}
+
+li,ul {
+  list-style: none;
+}
+html{
+  background-image: url(/img/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #0e041b;
+}

@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Logo font family
+$logo-font: 'Anton', sans-serif;
+
+/// Body (monospace) font family
+$body-font: 'Montserrat', sans-serif;
+
+///List font family
+$list-font:'Quicksand', sans-serif;
+
+//Colors
+$hover-color: #25b1b0;
+$hover-link-color: #fff;
+$light-grey: rgb(237, 237, 237);
+$mid-grey: rgb(153, 153, 153);
+$menu-bg: #262930;
+$header-bg :#161a3d;
+$border-color:#8e819e;
+$after-line-color:#1b8bcc;
+
+//Transform
+$transition : 600ms;
+
+
