@@ -1,3 +1,17 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 55px;
+    background: url(/eBook/img/btn.png);
+    color: #fff;
+    border-radius: 50px;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
