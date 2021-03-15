@@ -86,6 +86,8 @@
         align-items: center;
         padding-top: 80px;
         height: 100%;
+        border-top: 3px solid #23254c;
+        border-bottom: 3px solid #23254c;
         .hero-head{
             text-align: center;
             width: 100%;
@@ -193,6 +195,136 @@
         }
     }
 }
+#team{  
+    height: 800px;
+    width: 100%; 
+    background-color:#1c2956;
+    padding-top: 80px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        .team-top{
+            text-align: center;
+            color:#fff;
+            margin-bottom: 50px;
+            h2{
+                font-size: 3rem;
+                letter-spacing: .3rem;
+                word-spacing: .3rem;
+                padding: 15px;
+            }
+            span{
+                font-size: 18px;
+                color: $border-color;
+            }
+        }
+        .team-card-container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            .team-card{
+                max-width: 375px;
+                width: 100%;
+                height: 100%;
+                max-height: 475px;
+                background-color: #1e1e46;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 20px;
+                padding: 40px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                &-img{
+                    width: 100px;
+                    height: 140px;
+                    min-height: 80px;
+                    background-color: #fff;
+                    margin-bottom:1rem;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    background-color:#110223;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        position: absolute;
+                        top: 20px;
+                    }
+                }
+                &-info{
+                    margin-bottom: 20px;
+                    text-align: center;
+                    h3{
+                        font-size: 21px;
+                        color: #fff;
+                        letter-spacing: 1px;
+                        font-weight: 300;
+                    }
+                    span{
+                        color: #065889;
+                        font-size: 12px;
+                    }
+                }
+                p{
+                    width: 100%;
+                    height: 20%;
+                    overflow: hidden;
+                    font-size: 11px;
+                    color: $border-color;
+                    letter-spacing: .1rem;
+                    &:hover{
+                        overflow-y: scroll;
+                    } 
+                }
+                &-rate{
+                    position: relative;
+                    top: 20px;
+                    text-align: center;
+                    margin-top: 20px;
+                    justify-self: flex-end;
+                    span{
+                        color: $border-color;
+                        font-size: 9px;
+                    }
+                    &-stars{
+                        margin-top: 5px;
+                        white-space: nowrap;
+                        color:#ffda44;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 992px) { 
     .hero-bottom-left{
         display: none;
