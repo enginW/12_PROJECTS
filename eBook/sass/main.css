@@ -1483,6 +1483,130 @@ li, ul {
           transform: translateX(-50%);
 }
 
+#contact {
+  width: 100%;
+  height: 500px;
+  background-color: #1c2956;
+}
+
+#contact .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+#contact .container .left-contact {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+#contact .container .left-contact span {
+  color: #8e819e;
+  margin-bottom: 20px;
+}
+
+#contact .container .left-contact span a {
+  color: #1b8bcc;
+}
+
+#contact .container .left-contact span:nth-child(3) {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#contact .container .left-contact span:nth-child(4), #contact .container .left-contact span:nth-child(5) {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+#contact .container .right-contact {
+  width: 50%;
+}
+
+#contact .container .right-contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  position: relative;
+  top: 20px;
+}
+
+#contact .container .right-contact form input[type="text"], #contact .container .right-contact form input[type="mail"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #8e819e;
+  color: #fff;
+}
+
+#contact .container .right-contact form input[type="text"]::-webkit-input-placeholder, #contact .container .right-contact form input[type="mail"]::-webkit-input-placeholder {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+#contact .container .right-contact form input[type="text"]:-ms-input-placeholder, #contact .container .right-contact form input[type="mail"]:-ms-input-placeholder {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+#contact .container .right-contact form input[type="text"]::-ms-input-placeholder, #contact .container .right-contact form input[type="mail"]::-ms-input-placeholder {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+#contact .container .right-contact form input[type="text"]::placeholder, #contact .container .right-contact form input[type="mail"]::placeholder {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+#contact .container .right-contact form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #8e819e;
+  color: #fff;
+}
+
+#contact .container .right-contact form textarea::-webkit-input-placeholder {
+  padding: 15px;
+}
+
+#contact .container .right-contact form textarea:-ms-input-placeholder {
+  padding: 15px;
+}
+
+#contact .container .right-contact form textarea::-ms-input-placeholder {
+  padding: 15px;
+}
+
+#contact .container .right-contact form textarea::placeholder {
+  padding: 15px;
+}
+
 @media (max-width: 992px) {
   .hero-bottom-left {
     display: none;
