@@ -5,14 +5,10 @@
 /**
  * Set up a decent box model on the root element
  */
- html{
-   overflow-x: hidden;
- }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;;
 }
 /**
  * Basic styles for links
@@ -23,4 +19,9 @@ a {
 
 li,ul {
   list-style: none;
+}
+.container{
+  width: 100%;
+  display: flex;
+  border: 1px solid blue;
 }

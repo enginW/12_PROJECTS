@@ -689,6 +689,10 @@ template {
 /**
  * Set up a decent box model on the root element
  */
+html {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1653,6 +1657,24 @@ li, ul {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+  }
+  .main-slide {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .buy-image {
+    display: none;
+  }
+  .buy-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-menu {
+    display: none;
   }
 }
 
