@@ -1,3 +1,68 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: $bodybg;
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .logo{
+            width: 20%;
+            min-width: 20%;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }
+            strong{
+                font-size: 1.7rem;
+            }
+        }
+        .footer-menu{
+            width: 60%;
+            
+            &::after{
+                content: "2018 Studio All rights reserved.";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 30px;
+                color: $border-color;
+                font-weight: 300;
+
+            }
+            ul{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .footer-menu-item{
+                    padding-right: 30px;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .social-icon{
+            width: 10%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            i{
+                padding-left: 20px;
+                font-size: 22px;
+                color: #fff;
+            }
+        }
+    }
+}

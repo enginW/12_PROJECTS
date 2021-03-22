@@ -1499,6 +1499,7 @@ li, ul {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+  position: relative;
 }
 
 #contact .container .left-contact {
@@ -1511,6 +1512,17 @@ li, ul {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: right;
+}
+
+#contact .container .left-contact::before {
+  content: "Contact";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 35px;
+  color: #fff;
 }
 
 #contact .container .left-contact span {
@@ -1555,7 +1567,7 @@ li, ul {
   height: 40px;
   border-radius: 5px;
   position: relative;
-  background-color: transparent;
+  background-color: #161235;
   border: 1px solid #8e819e;
   color: #fff;
 }
@@ -1563,21 +1575,29 @@ li, ul {
 #contact .container .right-contact form input[type="text"]::-webkit-input-placeholder, #contact .container .right-contact form input[type="mail"]::-webkit-input-placeholder {
   font-size: 13px;
   padding-left: 15px;
+  font-weight: 300;
+  color: #fff;
 }
 
 #contact .container .right-contact form input[type="text"]:-ms-input-placeholder, #contact .container .right-contact form input[type="mail"]:-ms-input-placeholder {
   font-size: 13px;
   padding-left: 15px;
+  font-weight: 300;
+  color: #fff;
 }
 
 #contact .container .right-contact form input[type="text"]::-ms-input-placeholder, #contact .container .right-contact form input[type="mail"]::-ms-input-placeholder {
   font-size: 13px;
   padding-left: 15px;
+  font-weight: 300;
+  color: #fff;
 }
 
 #contact .container .right-contact form input[type="text"]::placeholder, #contact .container .right-contact form input[type="mail"]::placeholder {
   font-size: 13px;
   padding-left: 15px;
+  font-weight: 300;
+  color: #fff;
 }
 
 #contact .container .right-contact form textarea {
@@ -1586,25 +1606,33 @@ li, ul {
   min-height: 100px;
   max-height: 150px;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #161235;
   border: 1px solid #8e819e;
   color: #fff;
 }
 
 #contact .container .right-contact form textarea::-webkit-input-placeholder {
   padding: 15px;
+  color: #fff;
+  font-weight: 300;
 }
 
 #contact .container .right-contact form textarea:-ms-input-placeholder {
   padding: 15px;
+  color: #fff;
+  font-weight: 300;
 }
 
 #contact .container .right-contact form textarea::-ms-input-placeholder {
   padding: 15px;
+  color: #fff;
+  font-weight: 300;
 }
 
 #contact .container .right-contact form textarea::placeholder {
   padding: 15px;
+  color: #fff;
+  font-weight: 300;
 }
 
 @media (max-width: 992px) {
@@ -1626,6 +1654,102 @@ li, ul {
             flex-direction: column;
     text-align: center;
   }
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #1c2956;
+}
+
+footer .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+footer .container .logo {
+  width: 20%;
+  min-width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+footer .container .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+footer .container .logo strong {
+  font-size: 1.7rem;
+}
+
+footer .container .footer-menu {
+  width: 60%;
+}
+
+footer .container .footer-menu::after {
+  content: "2018 Studio All rights reserved.";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 30px;
+  color: #8e819e;
+  font-weight: 300;
+}
+
+footer .container .footer-menu ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .footer-menu ul .footer-menu-item {
+  padding-right: 30px;
+}
+
+footer .container .footer-menu ul .footer-menu-item a {
+  color: #fff;
+}
+
+footer .container .social-icon {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .container .social-icon i {
+  padding-left: 20px;
+  font-size: 22px;
+  color: #fff;
 }
 
 .btn {
