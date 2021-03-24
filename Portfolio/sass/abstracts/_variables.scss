@@ -4,20 +4,21 @@
 
 
 /// Logo font family
-$logo-font: 'Anton', sans-serif;
+$head-text: 'Dancing Script', cursive;
 
 /// Body (monospace) font family
-$body-font: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
+$body-font: 'Lato', sans-serif;
 
 ///List font family
-$list-font:'Quicksand', sans-serif;
+$nav-font:'Poppins', sans-serif;
 
 //Colors
 $hover-color: #25b1b0;
-$hover-link-color: #fff;
-$light-grey: rgb(237, 237, 237);
-$mid-grey: rgb(153, 153, 153);
-$menu-bg: #262930;
+$light-grey: rgb(245, 237, 237);
+$mid-grey: rgb(95, 95, 95);
+$content-bg:#2b2a2f;
+$menu-bg: #6e6667;
+$navbar-social-bg:rgba(7, 7, 7, 0.575);
 
 //Comp
 

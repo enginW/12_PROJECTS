@@ -21,7 +21,7 @@ li,ul {
   list-style: none;
 }
 .container{
-  width: 100%;
-  display: flex;
-  border: 1px solid blue;
+  max-width: 1240px;
+  height: 100%;
+  margin:0 auto;
 }
