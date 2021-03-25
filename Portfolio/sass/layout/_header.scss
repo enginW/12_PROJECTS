@@ -58,4 +58,14 @@
         display: flex;
         flex-direction: column;     
     }
+    .main{
+        &-content{
+            &-firstImage{
+                display: none;
+            }
+            &-secondImage{
+                flex: 1;
+            }
+        }
+    }
 }

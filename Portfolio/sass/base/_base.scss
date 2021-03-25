@@ -5,6 +5,9 @@
 /**
  * Set up a decent box model on the root element
  */
+ body{
+   background-color: rgba(148, 138, 138, 0.301);
+ }
 *{
   margin: 0;
   padding: 0;
