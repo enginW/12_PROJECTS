@@ -718,6 +718,10 @@ li, ul {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #head {
   width: 100%;
   height: 110px;
