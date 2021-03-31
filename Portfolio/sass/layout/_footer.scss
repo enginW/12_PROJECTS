@@ -1,3 +1,44 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer{
+    width: 100%;
+    background-color: $light-grey;
+    height: 100px;
+    margin-top: $gutter*3;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            width: 180px;
+            a{
+                color: $mid-grey;
+                font-size: 40px;
+                font-family: $head-text;
+                padding: 20px;
+            }
+        }
+        .social-icon{
+            display: flex;
+            a{
+                padding: 15px;
+                margin-left: 5px;
+                color: $content-bg;
+                transition: $transition;
+                border: 1px solid transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                    color: $menu-bg;
+                    border-radius: 50%;
+                    border: 1px solid $menu-bg;
+                }
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
