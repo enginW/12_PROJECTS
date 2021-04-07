@@ -690,6 +690,10 @@ template {
 /**
  * Set up a decent box model on the root element
  */
+header {
+  font-family: 'Karla', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -706,5 +710,110 @@ a {
 
 li, ul {
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  height: 110px;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header .container .header-logo {
+  width: 20%;
+  font-weight: bold;
+}
+
+.header .container .header-logo a {
+  display: inline-block;
+  padding: 15px;
+  color: #2e3b75;
+}
+
+.header .container .header-logo img {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 8px;
+}
+
+.header .container .header-logo span {
+  font-size: 35px;
+}
+
+.header .container .header-nav {
+  width: 70%;
+}
+
+.header .container .header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  gap: 20px;
+}
+
+.header .container .header-nav-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 200px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.header .container .header-nav-list-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  left: 0px;
+  background-color: #f04438;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.header .container .header-nav-list-item:hover::after {
+  width: 100%;
+}
+
+.header .container .header-nav-list-item a {
+  padding: 18px;
+  font-weight: bold;
+  color: #2e3b75;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  position: relative;
+}
+
+.header .container .header-nav-list-item a:hover {
+  color: #f04438;
 }
 /*# sourceMappingURL=main.css.map */

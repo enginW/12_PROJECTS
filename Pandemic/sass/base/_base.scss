@@ -5,6 +5,9 @@
 /**
  * Set up a decent box model on the root element
  */
+ header{
+   font-family: 'Karla', sans-serif;
+ }
 *{
   margin: 0;
   padding: 0;
@@ -19,4 +22,9 @@ a {
 
 li,ul {
   list-style: none;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }

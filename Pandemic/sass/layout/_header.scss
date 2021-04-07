@@ -1,3 +1,73 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header{
+    height: 110px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .header-logo{
+            width: 20%;
+            font-weight: bold;
+            a{
+                display: inline-block;
+                padding: 15px;
+                color: $main-color;
+            }
+            img{
+                width: 45px;
+                height: 45px;
+                position: relative;
+                top: 8px;
+            }
+            span{
+                font-size: 35px;
+            }
+        }
+        .header-nav{
+            width: 70%;
+            &-list{
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                gap: 20px;
+                &-item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 200px;
+                    white-space: nowrap;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        width: 0;
+                        height: 2px;
+                        left: 0px;
+                        background-color:$red-color;
+                        position: absolute;
+                        bottom: 0;
+                        transition: $transition;
+                    }
+                    &:hover{
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                    a{
+                        padding: 18px;
+                        font-weight: bold;
+                        color: $main-color;
+                        transition: $transition;
+                        position: relative;
+                        &:hover{
+                            color: $red-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
