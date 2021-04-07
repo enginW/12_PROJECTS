@@ -11,6 +11,7 @@
         .header-logo{
             width: 20%;
             font-weight: bold;
+            white-space: nowrap;
             a{
                 display: inline-block;
                 padding: 15px;
@@ -31,9 +32,11 @@
             &-list{
                 display: flex;
                 justify-content: flex-end;
+                align-items: center;
                 width: 100%;
                 gap: 20px;
                 &-item{
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -70,4 +73,34 @@
             }
         }
     }
+}
+@media (max-width: 1200px) {
+
+    .header{
+        .container{
+            width: 100%;
+            flex-direction: column;
+            .header-nav{
+                margin: 0 auto;
+                
+            }
+        }
+    }
+  
+}
+@media (max-width: 960px){
+    .header-logo{
+        position: relative;
+        left: -35px;
+    }
+    .header-nav{
+        padding-top: 30px;
+        &-list{
+            flex-direction: column;
+            &-item{
+                border-right: 1px solid $red-color;
+                border-left: 1px solid $red-color;
+            }
+        }
+    }   
 }
