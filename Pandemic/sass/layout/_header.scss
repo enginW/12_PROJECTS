@@ -86,7 +86,9 @@
             }
         }
     }
-  
+    .main{
+        margin-top: 50px;
+    }  
 }
 @media (max-width: 960px){
     .header-logo{
@@ -100,7 +102,26 @@
             &-item{
                 border-right: 1px solid $red-color;
                 border-left: 1px solid $red-color;
+                transition: $transition;
+                a{
+                    &:hover{
+                        transform: scale(1.1);
+                        }
+                }
             }
         }
-    }   
+    } 
+    .main{
+        margin-top: 500px;
+        .container{
+            width: 100%;
+            text-align: center;
+            &-content{
+                margin: 0 auto;
+            }
+            &-img{
+                display: none;
+            }
+        }
+    }
 }
