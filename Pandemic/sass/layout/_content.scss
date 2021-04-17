@@ -66,3 +66,109 @@
 .caps{
     width: 100%;
 }
+
+.content1{
+    width: 100%;
+    position: relative;
+    margin-top: 150px;
+    font-family: $body-font;
+    display: flex;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        .left-content1{
+            width: 55%;
+            h3{
+                font-size: 25px;
+                color: #fff;
+                background-color: $red-color;
+                display: inline;
+            }
+            h2{
+                margin: 20px 0;
+                font-size: 45px;
+                font-family: $logo-font;
+                color: $main-color;
+            }
+            p{
+                span{
+                    font-size: 22px;
+                }
+                color: $main-color;
+            }
+        }
+        .right-content1{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 50px;
+            &-case{
+                border: 1px solid red;
+                width: 250px;
+                height: 90px;
+                text-align: center;
+                font-size: 28px;
+                color: #fff;
+                background-color: $red-color;
+                padding-top:15px;
+                border-radius: 50px;
+                position: relative;
+                &::after{
+                    content: "";
+                    width: 2px;
+                    height: 190px;
+                    background-color: $main-color;
+                    position: absolute;
+                    top: 89px;
+                    left: 75px;
+                }
+                span{
+                    font-size: 18px;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+            &-list{
+                align-self: flex-end;
+                padding: 30px;
+                &-item{
+                    font-size: 25px;
+                    color: $red-color;
+                    margin-bottom: 35px;
+                    position: relative;
+                    &:first-child{
+                        margin-top: 10px;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    &::after{
+                        content: "";
+                        width: 70px;
+                        height:4px;
+                        position: absolute;
+                        top: 19px;
+                        left: -30%;
+                        border-bottom: 1px dashed $main-color;
+                    }
+                    &::before{
+                        content: "";
+                        width: 12px;
+                        height: 12px;
+                        background-color: $main-color;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 15px;
+                        left: -25px;
+                    }
+                    span{
+                        color: $main-color;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

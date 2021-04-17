@@ -81,8 +81,7 @@
             width: 100%;
             flex-direction: column;
             .header-nav{
-                margin: 0 auto;
-                
+                margin: 0 auto; 
             }
         }
     }
@@ -124,4 +123,17 @@
             }
         }
     }
+    .content1{
+        .container{
+            .right-content1{
+                display: none !important;
+            }
+        .left-content1{
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    }
 }
+
