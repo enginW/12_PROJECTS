@@ -1104,4 +1104,110 @@ li, ul {
   color: #2e3b75;
   font-size: 15px;
 }
+
+.content2 {
+  width: 100%;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  border: 1px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8faff;
+}
+
+.content2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.content2 .container .top-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content2 .container .top-container h2 {
+  font-size: 25px;
+  color: #fff;
+  background-color: #2e3b75;
+  width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.content2 .container .top-container h1 {
+  font-size: 60px;
+  line-height: 40px;
+  color: #f04438;
+  font-family: "Karla", sans-serif;
+}
+
+.content2 .container .bottom-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content2 .container .bottom-container_item {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+.content2 .container .bottom-container_item h3 {
+  font-size: 25px;
+  color: #2e3b75;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.content2 .container .bottom-container_item p {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 75%;
+  color: #2e3b75;
+  font-size: 18px;
+}
+
+.content2 .container .bottom-container_item span {
+  font-size: 110px;
+  position: absolute;
+  top: -50px;
+  opacity: .4;
+  color: #f04438;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.content-img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -172,3 +172,74 @@
         }
     }
 }
+.content2{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    height: 100vh;
+    border: 1px solid black;
+    align-items: center;
+    background-color: #f8faff;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        .top-container{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: 25px;
+                color:#fff;
+                background-color: $main-color;
+                width: 300px;
+                align-self: center; 
+            }
+            h1{
+                font-size: 60px;
+                line-height: 40px;
+                color: $red-color;
+                font-family: $body-font;
+            }
+        }
+        .bottom-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &_item{
+                width: 30%;
+                text-align: center;
+                position: relative;
+                h3{
+                    font-size: 25px;
+                    color: $main-color;
+                    font-family: $logo-font;
+                    margin-bottom:10px;
+                }
+                p{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 75%;
+                    color: $main-color;
+                    font-size: 18px;
+                }
+                span{
+                    font-size: 110px;
+                    position: absolute;
+                    top: -50px;
+                    opacity: .4;
+                    color: $red-color;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+.content-img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;    
+}
