@@ -21,10 +21,12 @@
   'layout/navigation',
   'layout/content',
   'layout/sidebar',
-  'layout/footer';
+  'layout/footer'; 
 
+  @import
+  'layout/responsive';
 // 5. Components
-@import
+  @import
   'components/button';
 
 // 6. Page-specific styles
